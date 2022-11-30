@@ -2,11 +2,14 @@ import json
 import time
 import requests
 import random
+import easygui
 
 def get_like(tlp: tuple):
     return tlp[2]
 
-aid: int = 766246209
+input = easygui.enterbox("请输入作品ID")
+
+aid: int = input
 i = 0
 all_comments = []
 like_sort_mode = True
